@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "./styles/slider.css";
+import "./styles/slider.scss";
 import Slider from "./slider/slider";
 import SliderItem from "./slider/sliderItem";
 

@@ -1,31 +1,7 @@
+/*# sourceMappingURL=slider.css.map */
 body {
   min-height: 100vh;
   margin: 0;
-}
-
-.dots-wrapper {
-  position: absolute;
-  width: 100px;
-  left: 50%;
-  margin-left: -50px;
-  bottom: 20px;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: blue;
-  border-radius: 50%;
-  margin: 0 4px;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-
-li.active, li:hover {
-   opacity: 1;
 }
 
 .slider {
@@ -37,13 +13,11 @@ li.active, li:hover {
   cursor: pointer;
   overflow: hidden;
 }
-
-.slider-inner {
+.slider .slider-inner {
   position: absolute;
   left: 0;
 }
-
-.slide {
+.slider .slider-inner .slide {
   float: left;
   box-sizing: border-box;
   background-size: 100% auto;
@@ -61,14 +35,11 @@ li.active, li:hover {
   height: 100vh;
   top: 12vw;
 }
-
-img {
+.slider .slider-inner .slide img {
   display: block;
   width: 25%;
   margin: auto;
 }
-
-
 
 a {
   position: absolute;
@@ -86,10 +57,9 @@ a {
   transform: rotate(45deg);
   transition: left 0.5s;
 }
-
 .arrow-left:hover {
-   left: 15px;
- }
+  left: 15px;
+}
 
 .arrow-right {
   right: 20px;
@@ -99,5 +69,33 @@ a {
   transition: right 0.5s;
 }
 .arrow-right:hover {
-   right: 15px;
- }
+  right: 15px;
+}
+
+.dots-wrapper {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 20px;
+  text-align: center;
+}
+.dots-wrapper li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.dots-wrapper li:hover {
+  opacity: 1;
+}
+.dots-wrapper .active {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=slider.css.map */
