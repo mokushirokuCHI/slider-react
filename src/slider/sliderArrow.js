@@ -1,12 +1,13 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 class SliderArrow extends Component {
     render() {
         return (
-            <a  href="#"
+            <a
+                href="#"
                 className={this.props.className}
-                onClick={this.props.onClick}>
-            </a>
+                onClick={this.props.onClick}
+            />
         );
     }
 }
